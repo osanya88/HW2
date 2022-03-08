@@ -1,0 +1,5 @@
+all: test_dynamic.o
+	gcc test_dynamic.o -o TestCodeDynamic
+
+test_dynamic.o: test_dynamic.c
+	gcc -c test_dynamic.c 

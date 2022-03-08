@@ -1,0 +1,6 @@
+all: test_static.o
+	gcc test_static.o -o TestCodeStatic
+
+test_static.o: test_static.c
+	gcc -c test_static.c
+
